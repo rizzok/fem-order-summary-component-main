@@ -1,11 +1,9 @@
-// The designs were created to the following widths:
-
-// - Mobile: 375px
-// - Desktop: 1440px
+@use "sass:math";
 
 // Design width
 $mobilewidth: 375px;
 $desktopwidth: 1440px;
+$breakpoint: math.round(math.div(($mobilewidth + $desktopwidth), 2));
 
 // Colors
 
