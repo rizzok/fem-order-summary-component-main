@@ -141,12 +141,6 @@ button {
   bottom: 1rem;
   width: 100%;
   text-align: center;
-
-  @media screen and (max-height: 650px) {
-    & {
-      display: none;
-    }
-  }
 }
 
 /* Media queries */
@@ -191,5 +185,17 @@ button {
     a {
       font-size: 0.9rem;
     }
+  }
+}
+
+@media screen and (max-width: $breakpoint) and (max-height: 650px) {
+  .attribution {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $breakpoint) and (max-height: 785px) {
+  .attribution {
+    display: none;
   }
 }
