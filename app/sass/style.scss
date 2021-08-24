@@ -1,0 +1,130 @@
+@import 'reset';
+@import 'base';
+
+/* Global start */
+html {
+  font-family: $fontfamily;
+  font-size: $fontsize;
+  font-weight: 500;
+  text-align: center;
+  color: $desaturatedblue;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: no-repeat url(/images/pattern-background-mobile.svg);
+  background-color: $paleblue;
+}
+
+a {
+  color: $brightblue;
+
+  &:hover {
+    color: $purplehover;
+  }
+
+  &:visited {
+    color: $brightblue;
+  }
+}
+
+.card {
+  width: 330px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 70px auto;
+  box-shadow: 0 20px 20px 0 #c8d3f3;
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 30px 22px;
+
+  h1 {
+    color: $darkblue;
+    font-weight: 900;
+    font-size: 1.4rem;
+  }
+
+  > p {
+    margin: 20px 10px;
+    line-height: 1.5rem;
+  }
+}
+
+.plan {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px 0;
+  background-color: $verypaleblue;
+  border-radius: 15px;
+  padding: 1rem;
+
+  .plan-info {
+    font-size: 0.95rem;
+    margin-left: 0.5rem;
+    margin-right: 2.5rem;
+  
+    p:first-child {
+      color: $darkblue;
+      font-weight: 900;
+      line-height: 1.5rem;
+    }
+  }
+
+  a {
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+}
+
+button {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  font-size: .9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 250ms ease-in-out, 
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  &:active {
+    transform: scale(0.98);
+  }
+  
+  &.btn-proceed {
+    color: #fff;
+    background: $brightblue;
+    padding: 1rem 4.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px 0px #3829e069;
+
+    &:hover,
+    &:focus {
+      background-color: $purplehover;
+    }
+  }
+
+  &.btn-cancel {
+    background-color: #fff0;
+    color: $desaturatedblue;
+    margin-top: 1.5rem;
+
+    &:hover,
+    &:focus {
+      color: $darkblue;
+    }
+  }
+}
+
+.attribution {
+  font-size: 0.8rem;
+}
